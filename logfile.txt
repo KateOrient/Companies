@@ -1,0 +1,59 @@
+Время работы:22522"UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-11-20T09:05:26</date>
+  <millis>1511157926616</millis>
+  <sequence>0</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Создание объекта Companies завершено.</message>
+</record>
+<record>
+  <date>2017-11-20T09:05:28</date>
+  <millis>1511157928660</millis>
+  <sequence>1</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Создание объекта Companies завершено.</message>
+</record>
+<record>
+  <date>2017-11-20T09:05:33</date>
+  <millis>1511157933014</millis>
+  <sequence>2</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>loadFromFile</method>
+  <thread>1</thread>
+  <message>Считывание с файла input.csv завершено.</message>
+</record>
+<record>
+  <date>2017-11-20T09:05:45</date>
+  <millis>1511157945482</millis>
+  <sequence>3</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>printJSON</method>
+  <thread>1</thread>
+  <message>Создание файла swear.json в формате JSON завершено.</message>
+</record>
+<record>
+  <date>2017-11-20T09:05:45</date>
+  <millis>1511157945529</millis>
+  <sequence>4</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>printXML</method>
+  <thread>1</thread>
+  <message>Создание файла swear.xml в формате XML завершено.</message>
+</record>
+</log>
