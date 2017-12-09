@@ -1,13 +1,15 @@
 package Companies;
 
+import java.lang.reflect.Field;
+import java.security.InvalidParameterException;
 import java.util.*;
 
 public class Company{
     private String name;
     private String shortName;
-    private GregorianCalendar dateUpdate;
+    private Date dateUpdate;
     private String address;
-    private GregorianCalendar dateFoundation;
+    private Date dateFoundation;
     private int countEmployees;
     private String auditor;
     private String phone;
@@ -17,7 +19,7 @@ public class Company{
     private String link;
 
     public Company (
-            String name, String shortName, GregorianCalendar dateUpdate, String address, GregorianCalendar dateFoundation,
+            String name, String shortName, Date dateUpdate, String address, Date dateFoundation,
             int countEmployees, String auditor, String phone, String email, String branch, String activity, String link){
         this.name = name;
         this.shortName = shortName;
@@ -32,7 +34,11 @@ public class Company{
         this.activity = activity;
         this.link = link;
     }
-    public Company(){}
+
+    public Company(){
+                this("","",Companies.dateFromString("0.0.0"),"",Companies.dateFromString("0.0.0"),
+                        0,"","","","","","");
+    }
 
     public void setName (String name){
         this.name = name;
@@ -42,7 +48,7 @@ public class Company{
         this.shortName = shortName;
     }
 
-    public void setDateUpdate (GregorianCalendar dateUpdate){
+    public void setDateUpdate (Date dateUpdate){
         this.dateUpdate = dateUpdate;
     }
 
@@ -50,7 +56,7 @@ public class Company{
         this.address = address;
     }
 
-    public void setDateFoundation (GregorianCalendar dateFoundation){
+    public void setDateFoundation (Date dateFoundation){
         this.dateFoundation = dateFoundation;
     }
 
@@ -90,7 +96,7 @@ public class Company{
         return countEmployees;
     }
 
-    public GregorianCalendar getDateUpdate (){
+    public Date getDateUpdate (){
         return dateUpdate;
     }
 
@@ -114,7 +120,7 @@ public class Company{
         return branch;
     }
 
-    public GregorianCalendar getDateFoundation (){
+    public Date getDateFoundation (){
         return dateFoundation;
     }
 
@@ -130,12 +136,24 @@ public class Company{
         return phone;
     }
 
+    public String getFieldByName(String field)throws Exception{
+        Field[] fields = Company.class.getDeclaredFields();
+        for(Field f:fields){
+            if(f.getName().equalsIgnoreCase(field)){
+                if(f.get(this).getClass() == Date.class){
+                    return Companies.dateToString(f.get(this));
+                }
+                return f.get(this).toString();
+            }
+        }
+        throw new NoSuchFieldError();
+    }
+
+
     @Override
     public String toString (){
-        StringBuilder sb = new StringBuilder(name).append(";").append(shortName).append(";").append(dateUpdate.get(5)).append(".");
-        sb.append(dateUpdate.get(2)).append(".").append(dateUpdate.get(1)).append(";");
-        sb.append(address).append(";").append(dateFoundation.get(5)).append(".");
-        sb.append(dateFoundation.get(2)).append(".").append(dateFoundation.get(1)).append(";");
+        StringBuilder sb = new StringBuilder(name).append(";").append(shortName).append(";").append(Companies.dateToString(dateUpdate)).append(";");
+        sb.append(address).append(";").append(Companies.dateToString(dateFoundation)).append(";");
         sb.append(countEmployees).append(";").append(auditor).append(";").append(phone).append(";");
         sb.append(email).append(";").append(branch).append(";").append(activity).append(";").append(link);
 

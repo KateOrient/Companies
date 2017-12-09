@@ -1,59 +1,131 @@
-Время работы:22522"UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2017-11-20T09:05:26</date>
-  <millis>1511157926616</millis>
+  <date>2017-12-09T12:53:19</date>
+  <millis>1512813199566</millis>
+  <sequence>0</sequence>
+  <logger>Companies.Companies</logger>
+  <level>WARNING</level>
+  <class>Companies.Companies</class>
+  <method>processSQL</method>
+  <thread>1</thread>
+  <message>Wrong SQL query.</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-12-09T12:55:21</date>
+  <millis>1512813321748</millis>
+  <sequence>0</sequence>
+  <logger>Companies.Companies</logger>
+  <level>WARNING</level>
+  <class>Companies.Companies</class>
+  <method>processSQL</method>
+  <thread>1</thread>
+  <message>Wrong SQL query.</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-12-09T12:56:22</date>
+  <millis>1512813382833</millis>
   <sequence>0</sequence>
   <logger>Companies.Companies</logger>
   <level>INFO</level>
   <class>Companies.Companies</class>
-  <method>&lt;init&gt;</method>
+  <method>findCountEmployees</method>
   <thread>1</thread>
-  <message>Создание объекта Companies завершено.</message>
+  <message>Поиск по числу сотрудников. Найдено команий: 3</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-12-09T15:22:31</date>
+  <millis>1512822151118</millis>
+  <sequence>0</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>findCountEmployees</method>
+  <thread>1</thread>
+  <message>Поиск по числу сотрудников. Найдено команий: 3</message>
 </record>
 <record>
-  <date>2017-11-20T09:05:28</date>
-  <millis>1511157928660</millis>
+  <date>2017-12-09T15:22:31</date>
+  <millis>1512822151387</millis>
   <sequence>1</sequence>
   <logger>Companies.Companies</logger>
-  <level>INFO</level>
+  <level>WARNING</level>
   <class>Companies.Companies</class>
-  <method>&lt;init&gt;</method>
+  <method>processSQL</method>
   <thread>1</thread>
-  <message>Создание объекта Companies завершено.</message>
+  <message>Wrong SQL query.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2017-11-20T09:05:33</date>
-  <millis>1511157933014</millis>
-  <sequence>2</sequence>
+  <date>2017-12-09T15:24:09</date>
+  <millis>1512822249962</millis>
+  <sequence>0</sequence>
   <logger>Companies.Companies</logger>
   <level>INFO</level>
   <class>Companies.Companies</class>
-  <method>loadFromFile</method>
+  <method>findCountEmployees</method>
   <thread>1</thread>
-  <message>Считывание с файла input.csv завершено.</message>
+  <message>Поиск по числу сотрудников. Найдено команий: 3</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2017-11-20T09:05:45</date>
-  <millis>1511157945482</millis>
-  <sequence>3</sequence>
+  <date>2017-12-09T15:27:55</date>
+  <millis>1512822475033</millis>
+  <sequence>0</sequence>
   <logger>Companies.Companies</logger>
   <level>INFO</level>
   <class>Companies.Companies</class>
-  <method>printJSON</method>
+  <method>findCountEmployees</method>
   <thread>1</thread>
-  <message>Создание файла swear.json в формате JSON завершено.</message>
+  <message>Поиск по числу сотрудников. Найдено команий: 3</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2017-11-20T09:05:45</date>
-  <millis>1511157945529</millis>
-  <sequence>4</sequence>
+  <date>2017-12-09T15:28:41</date>
+  <millis>1512822521937</millis>
+  <sequence>0</sequence>
   <logger>Companies.Companies</logger>
   <level>INFO</level>
   <class>Companies.Companies</class>
-  <method>printXML</method>
+  <method>findCountEmployees</method>
   <thread>1</thread>
-  <message>Создание файла swear.xml в формате XML завершено.</message>
+  <message>Поиск по числу сотрудников. Найдено команий: 3</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-12-09T15:30:18</date>
+  <millis>1512822618190</millis>
+  <sequence>0</sequence>
+  <logger>Companies.Companies</logger>
+  <level>INFO</level>
+  <class>Companies.Companies</class>
+  <method>findCountEmployees</method>
+  <thread>1</thread>
+  <message>Поиск по числу сотрудников. Найдено команий: 3</message>
 </record>
 </log>

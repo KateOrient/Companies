@@ -16,7 +16,7 @@ public class Menu{
 
         System.out.println("Enter input file name:");
         try{
-            list.loadFromFile(scanner.nextLine() + ".csv");
+            list.loadFromFile(scanner.nextLine());
         }
         catch (FileNotFoundException e){
             System.out.println("File nor found.");
@@ -84,10 +84,9 @@ public class Menu{
         System.out.println("Enter shortname:");
         shortName = scanner.nextLine();
 
-        sublist.clear();
-        int indx = list.findShortName(shortName);
-        if(indx!=-1){
-            sublist.addCompany(list.getCompany(indx));
+
+        sublist = list.findShortName(shortName);
+        if (sublist.getCount() != 0){
             sublist.printJSON(fileName + ".json");
             sublist.printXML(fileName + ".xml");
         }
@@ -160,7 +159,7 @@ public class Menu{
         dateTo = scanner.nextLine();
 
         sublist.clear();
-        sublist = list.findDateFoundation(Companies.dateFromString(dateFrom),Companies.dateFromString(dateTo));
+        sublist = list.findDateFoundation(Companies.dateFromString(dateFrom), Companies.dateFromString(dateTo));
         sublist.printJSON(fileName + ".json");
         sublist.printXML(fileName + ".xml");
     }
