@@ -115,6 +115,7 @@ public class Companies{
                     System.out.println(e.getMessage());
                 }
             }
+            
             sb.append("\t\t}");
             count++;
             if (count != list.size()){
